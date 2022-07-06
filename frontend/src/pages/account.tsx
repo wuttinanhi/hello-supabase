@@ -1,6 +1,7 @@
 import { User } from "@supabase/supabase-js";
 import { useEffect, useState } from "react";
 import { UserHelper } from "../common/user.helper";
+import { TodoWidget } from "../todo/todo.widget";
 import { LogoutLink } from "../user/logout-link";
 
 export default function AccountPage() {
@@ -23,6 +24,8 @@ export default function AccountPage() {
     <>
       <h1>Account</h1>
       <p>Email: {user.email}</p>
+      <br />
+      <TodoWidget />
       <br />
       <LogoutLink></LogoutLink>
     </>

@@ -5,6 +5,12 @@ export class UserHelper extends Helper {
     return this.supabase.auth.user();
   }
 
+  protected static async getUserId() {
+    const userData = await this.getCurrentUser();
+    const userId = userData?.id;
+    return userId;
+  }
+
   public static async signOut() {
     return this.supabase.auth.signOut();
   }
