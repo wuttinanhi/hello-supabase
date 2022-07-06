@@ -1,3 +1,4 @@
+import Link from "next/link";
 import RegisterForm from "../user/register-form";
 
 export default function RegisterPage() {
@@ -5,7 +6,7 @@ export default function RegisterPage() {
     <>
       <RegisterForm />
       <br />
-      <a href="/login">Login</a>
+      <Link href="/login">Login</Link>
     </>
   );
 }

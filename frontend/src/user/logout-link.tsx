@@ -7,8 +7,8 @@ export function LogoutLink() {
   }
 
   return (
-    <a onClick={signOut} href="#">
+    <button onClick={signOut} type="button">
       Logout
-    </a>
+    </button>
   );
 }
